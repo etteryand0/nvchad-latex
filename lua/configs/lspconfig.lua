@@ -16,6 +16,14 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.jdtls.setup {
+  cmd = { "C:/Users/etteryand/AppData/Local/nvim-data/mason/packages/jdtls/bin/jdtls" },
+}
+lspconfig.gopls.setup {}
+
+-- lspconfig.jdtls.setup {}
+-- require("jdtls").start_or_attach {}
+
 -- configuring single server, example: typescript
 -- lspconfig.tsserver.setup {
 --   on_attach = nvlsp.on_attach,
