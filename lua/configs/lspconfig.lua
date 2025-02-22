@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls" }
+local servers = { "html", "cssls", "tsserver", "tailwindcss" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -17,7 +17,7 @@ for _, lsp in ipairs(servers) do
 end
 
 lspconfig.jdtls.setup {
-  cmd = { "C:/Users/etteryand/AppData/Local/nvim-data/mason/packages/jdtls/bin/jdtls" },
+  -- cmd = { "C:/Users/etteryand/AppData/Local/nvim-data/mason/packages/jdtls/bin/jdtls" },
 }
 lspconfig.gopls.setup {}
 
